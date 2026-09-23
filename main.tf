@@ -1,13 +1,14 @@
-resource "aws_vpc" "main" {
-    cidr_block = var.vpc_cidr
-    instance_tenancy = "default"
-    enable_dns_hostnames = true
+module "aws_vpc" {
+    source = "../terraform-vpc-module"
 
-    tags = merge (
+    vpc_cidr = var.vpc_cidr
+    project_name = var.project_name
+    environment = var.environment
+    vpc_tags = merge (
         var.vpc_tags,
-        local.common_tags,
         {
-            Name = local.common_name_suffix
+            Name = "roboshop-dev"
         }
     )
+
 }
