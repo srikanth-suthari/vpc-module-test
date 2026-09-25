@@ -11,5 +11,5 @@ resource "aws_igw" "igw" {
     vpc_id = module.aws_vpc.id
 
     name = "${project_name}-${environment}-igw"
-    
+
 }
