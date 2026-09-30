@@ -7,9 +7,6 @@ module "aws_vpc" {
     vpc_tags = var.vpc_tags
 }
 
-resource "aws_igw" "igw" {
+resource "aws_internet_gateway" "igw" {
     vpc_id = module.aws_vpc.id
-
-    name = "${project_name}-${environment}-igw"
-
 }
