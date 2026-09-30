@@ -8,5 +8,5 @@ module "aws_vpc" {
 }
 
 resource "aws_internet_gateway" "igw" {
-    vpc_id = module.main.id
+    vpc_id = module.aws_vpc.id
 }
