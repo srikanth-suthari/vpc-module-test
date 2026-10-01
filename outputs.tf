@@ -15,3 +15,7 @@ output "vpc_id" {
 output "vpc_region" {
     value = module.vpc.vpc_region
 }
+
+output "igw_id" {
+    value = module.vpc.igw_id
+}
