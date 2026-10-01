@@ -7,6 +7,6 @@ module "vpc" {
     vpc_tags = var.vpc_tags
 }
 
-resource "aws_internet_gateway" "igw" {
-    vpc_id = module.aws_vpc.id
-}
+# resource "aws_internet_gateway" "igw" {
+#     vpc_id = module.aws_vpc.id
+# }

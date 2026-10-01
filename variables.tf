@@ -7,8 +7,7 @@ variable "vpc_cidr" {
 variable "vpc_tags" {
     type = map
     default = {
-        Project = "vpc-module-test"
-        Terraform = true
+        Purpose = "vpc-module-test"
     }
 }
 
