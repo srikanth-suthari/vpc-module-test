@@ -1,4 +1,4 @@
-module "aws_vpc" {
+module "vpc" {
     source = "../terraform-vpc-module"
 
     vpc_cidr = var.vpc_cidr
