@@ -19,7 +19,3 @@ output "vpc_region" {
 output "igw_id" {
     value = module.vpc.igw_id
 }
-
-output "public_subnet" {
-    value = module.aws_subnets.availability_zone
-}
