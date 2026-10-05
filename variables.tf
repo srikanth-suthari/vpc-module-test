@@ -7,7 +7,7 @@ variable "vpc_cidr" {
 variable "vpc_tags" {
     type = map
     default = {
-        Purpose = "vpc-module-test"
+      Purpose = "vpc-module-test"
     }
 }
 
@@ -19,4 +19,9 @@ variable "project_name" {
 variable "environment" {
   type = string
   default = "dev"
+}
+
+variable "public_subnet_cidrs" {
+  type = list
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
 }
