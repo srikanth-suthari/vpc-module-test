@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "my-remote-state-bucket-terraform1"
+    bucket = "my-remote-state-bucket-terraform12"
     key    = "vpc-module-demo"
     region = "us-east-1"
     use_lockfile = true
