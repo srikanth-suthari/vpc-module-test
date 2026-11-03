@@ -30,7 +30,7 @@ output "private_subnet_ids" {
     value = module.vpc.private_subnet_ids
 }
 
-output "public_subnet_ids" {
+output "database_subnet_ids" {
     description = "List of database subnet IDs"
     value = module.vpc.database_subnet_ids
 }
